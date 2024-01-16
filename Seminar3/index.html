@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrowBe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3f27ae9b39.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="top">
         <header class="navigation">
-            <img src="img/logo.svg" alt="logo">
-            <img src="img/GrowBe.svg" alt="GrowBe">
+            <div class="nav__logo">
+                <img src="img/logo.svg" alt="logo">
+                <img src="img/GrowBe.svg" alt="GrowBe">
+            </div>
             <nav class="top__nav">
                 <a href="index.html">Home</a>
                 <a href="#">About us</a>
                 <a href="#">Services</a>
-                <a href="#">Features</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Features
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                </div>
                 <a href="#">Team</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact</a>
@@ -31,10 +46,10 @@
                 <p class="text">Provide all kind of seo services and help to improve seo ranking. Globally incubate standards.</p>
                 <div class="top__buttons">
                     <button class="button">Start Now</button>
-                    <button class="button">Watch Video</button>
+                    <button class="but__hidden">Watch Video</button>
                 </div>
-                <img src="img/pngfind 1.png" alt="top__img">
             </div>
+            <img class="top__img" src="img/pngfind 1.png" alt="top__img">
         </section>
         <section class="top__logos">
             <img src="img/liva.svg" alt="logo1">
